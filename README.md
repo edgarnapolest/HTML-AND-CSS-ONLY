@@ -11,5 +11,3 @@ Colección de ejemplos y pequeñas páginas estáticas creadas durante un curso 
   - Ruta: `Pagina con sidebars Flexbox/index.html` + `Pagina con sidebars Flexbox/style.css`
 - Demo: Tarjeta giratoria responsiva (carpeta `Tarjeta giratoria responsibe/`)
 - Activos: imágenes e iconos en la raíz (`icono.png`, `FotosensorArduino.png`, `Protoboard_circuito_multivibradores.jpg`, ...)
-
-## Estructura (resumen)
