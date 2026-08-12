@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto</title>
+</head>
+<body>
+    <header class="header">
+        <input class="header__checkbox" type="checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="icono.png">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#profile">About Us</a></li>
+                <li class="header__nav-item"><a href="#proyectos">Portafolio</a></li>
+                <li class="header__nav-item"><a href="#contact">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="Protoboard_circuito_multivibradores.jpg" class="profile__img">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>
+                            ¿Que es la electrónica?
+                        </h1>
+                        <p>La electrónica es una rama de la física aplicada que comprende la física, la ingeniería, la tecnología y las aplicaciones que tratan con la emisión, el flujo y el control de los electrones u otras partículas cargadas eléctricamente— en el vacío y la materia. La identificación del electrón en 1897, junto con la invención del tubo de vacío, que podía amplificar y rectificar pequeñas señales eléctricas, inauguraron el campo de la electrónica y la edad del electrón.</p>
+                    </div>
+                    <div class="profile__skills-container">
+                        <h2>Ámbitos en donde es aplicada</h2>
+                        <ul>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar-20">20</div>
+                                </div>
+                                <span class="profile__skill-name">Computación</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar-10">10</div>
+                                </div>
+                                <span class="profile__skill-name">Equipos</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar-70">70</div>
+                                </div>
+                                <span class="profile__skill-name">Vida diaria</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar-100">100</div>
+                                </div>
+                                <span class="profile__skill-name">Avances Tec</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar-60">60</div>
+                                </div>
+                                <span class="profile__skill-name">Medicina</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar-20">20</div>
+                                </div>
+                                <span class="profile__skill-name">Ingenierias</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio" id="proyectos">
+        <h2 class="portfolio__title">PORTFOLIO SECTION</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+        </div>
+    </section>
+    <section class="form" id="contact">
+        <h2 class="form__title">CONTACT</h2>
+        <form class="form__form">
+            <div class="form__input-container">
+                <label>Nombre
+                    <input type="text" class="form__input" placeholder="John">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Apellidos
+                    <input type="text" class="form__input" placeholder="Doe">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>E-mail
+                    <input type="email" class="form__input" placeholder="johndoe@gmail.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Mensaje
+                    <textarea placeholder="Your Message"></textarea>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    <footer>
+        johndoe # 1 - Copyright
+    </footer>
+</body>
+</html>
