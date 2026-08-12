@@ -151,25 +151,7 @@ input[type="checkbox"]{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.sidebar label::before, .sidebar label::after{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 21px;
-    background-color: transparent;
-}
-.sidebar label::before{
-    top: -20px;
-    left: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 4px 4px 0 4px var(--bg-color);
-}
-.sidebar label::after{
-    bottom: -20px;
-    left: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 4px -4px 0 4px var(--bg-color);
-}
+
 .sidebar:has(input[type="checkbox"]:checked){
     width: fit-content;
 }
@@ -200,6 +182,7 @@ input[type="checkbox"]{
 .sidebar:has(input[type="checkbox"]:checked) .sidebar__picture{
     top: 2rem;
     left: 0;
+    position: relative;
 }
 .sidebar:has(input[type="checkbox"]:checked) picture{
     width: fit-content;
@@ -211,8 +194,4 @@ input[type="checkbox"]{
 .sidebar label:hover {
     transform: scale(1.1);
     box-shadow: 0 0 0 5px rgba(246, 98, 34, 0.15);
-}
-.sidebar:has(input[type="checkbox"]:checked) .sidebar__form label::before,
-.sidebar:has(input[type="checkbox"]:checked) .sidebar__form label::after {
-    display: none;
 }
