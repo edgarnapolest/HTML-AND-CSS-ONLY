@@ -11,54 +11,59 @@
     <div class="chat">
         <!---Caja de Usuario--->
         <div class="chat__user">
-            <img src="/sources/icono-medio.png">
-            <span>Nombre de usuario</span>
+            <img src="../sources/icono-medio.png" alt="Avatar del usuario">
+            <span>Ana Gómez</span>
         </div>
+
         <div class="chat__content">
             <!---Mensaje user 1--->
             <div class="msg">
                 <p class="msg__content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eaque itaque et iusto repellendus. Consequatur, voluptate ullam provident debitis nisi nam excepturi sed? Error, modi? Dicta id eius consequatur quaerat?
+                    Hola, ¿cómo va el proyecto?
                 </p>
             </div>
+
             <!---Mensaje user 2--->
             <div class="msg self">
                 <p class="msg__content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eaque itaque et iusto repellendus. Consequatur, voluptate ullam provident debitis nisi nam excepturi sed? Error, modi? Dicta id eius consequatur quaerat?
+                    Todo bien, estoy terminando la última parte del diseño.
                 </p>
             </div>
+
             <!---Mensaje user 3--->
             <div class="msg">
                 <p class="msg__content">
-                    Lorem ipsum dolor
+                    Perfecto, me avisas cuando esté listo.
                 </p>
             </div>
+
             <!---Mensaje user 4--->
             <div class="msg self">
                 <p class="msg__content">
-                    Lorem ipsum dolor sit amet consectetur adiora perspiciatis. 
+                    Sí, te lo paso en un rato para que lo revises.
                 </p>
             </div>
+
             <!---Mensaje user 5--->
-            <div class="msg self">
+            <div class="msg">
                 <p class="msg__content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ut blanditiis inventore nisi ullam asperiores facere corrupti in officiis sit minima quidem a dolorum aperiam aliquid earum, recusandae, suscipit maiores.
+                    Genial, gracias. También me gustaría ver la versión mobile.
                 </p>
             </div>
         </div>
+
         <!---Caja de escritura--->
         <div class="chat__footer">
-            <div class="chat__emojis">
+            <div class="chat__emojis" aria-label="emoji">
                 <span class="material-symbols-outlined">emoji_emotions</span>
             </div>
             <div class="chat__input">
-                <input type="text" placeholder="Escribe tu mensaje aqui...">
+                <textarea rows="1" placeholder="Escribe tu mensaje aqui..."></textarea>
             </div>
-            <div class="chat__send">
+            <div class="chat__send" aria-label="Enviar mensaje">
                 <span class="material-symbols-outlined">send</span>
             </div>
         </div>
     </div>
-
 </body>
 </html>

@@ -12,7 +12,6 @@ body{
     --dark-color: #f62;
     --text-color: #444;
     background-color: var(--bg-color);
-
 }
 
 /*   ----  SIDEBAR STYLES   ----    */
@@ -58,7 +57,6 @@ body{
 .sidebar__item:hover{
     background-color: var(--bg-color);
 }
-
 .sidebar__item::before,.sidebar__item::after{
     content: '';
     position: absolute;
@@ -78,9 +76,7 @@ body{
     box-shadow: 4px -4px 0 4px var(--bg-color);
 }
 
-
 /*   ----  SIDEBAR PICTURE STYLES   ----    */
-
 .sidebar__picture{
     margin-left: 1.5rem;
     position: relative;
@@ -103,7 +99,6 @@ body{
     padding: 0 12px 0 9px;
     color: inherit;
 }
-
 .item--profile{
     margin: 12px;
     color: var(--text-color);
@@ -119,32 +114,43 @@ body{
 .item--profile::before , .item--profile::after{
     display: none;
 }
-
 input[type="checkbox"]{
     display: none;
 }
-
-
-.sidebar__form{
+.sidebar__form {
     position: absolute;
     z-index: 20;
-    right: -1rem;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .sidebar__form .open-button{
     display: none;
 }
-
-.sidebar label{
+.sidebar label {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--bg-color);
     color: var(--sidebar-color);
     border-radius: 50%;
+    border: 2px solid rgba(246, 98, 34, 0.18);
+    box-shadow: 0 0 0 3px rgba(246, 98, 34, 0.08);
     font-size: 20px;
-    padding: 18px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
     user-select: none;
+    font-family: 'Material Symbols Outlined';
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 40;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-
 .sidebar label::before, .sidebar label::after{
     content: '';
     position: absolute;
@@ -154,7 +160,7 @@ input[type="checkbox"]{
 }
 .sidebar label::before{
     top: -20px;
-    left: 21px;
+    left: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 4px 4px 0 4px var(--bg-color);
 }
@@ -164,34 +170,36 @@ input[type="checkbox"]{
     border-top-right-radius: 20px;
     box-shadow: 4px -4px 0 4px var(--bg-color);
 }
-
-input[type="checkbox"]:checked ~ label{
-    background-color: var(--sidebar-color);
-    color: var(--bg-color);
-}
-
-input[type="checkbox"]:checked ~ label::before,
-input[type="checkbox"]:checked ~ label::after{
-    display: none;
-}
-
 .sidebar:has(input[type="checkbox"]:checked){
     width: fit-content;
 }
 
-.sidebar:has(input[type="checkbox"]:checked) .sidebar__form .open-button{
-    display: block;
+.sidebar:has(input[type="checkbox"]:checked) .sidebar__form .open-button {
+    display: flex;
+    background-color: var(--sidebar-color);
+    color: var(--dark-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
-.sidebar:has(input[type="checkbox"]:checked) .sidebar__form label{
+
+.sidebar:has(input[type="checkbox"]:checked) .sidebar__form label:not(.open-button){
     display: none;
 }
 
-.sidebar:has(input[type="checkbox"]:checked) .sidebar__form{
-    top: 4rem;
-    width: fit-content;
+.sidebar:has(input[type="checkbox"]:checked) .sidebar__form {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    right: auto;
+    transform: none;
+    z-index: 1000;
 }
+
 .sidebar:has(input[type="checkbox"]:checked) .sidebar__picture img{
     width: 3.4rem;
+}
+.sidebar:has(input[type="checkbox"]:checked) .sidebar__picture{
+    top: 2rem;
+    left: 0;
 }
 .sidebar:has(input[type="checkbox"]:checked) picture{
     width: fit-content;
@@ -200,5 +208,11 @@ input[type="checkbox"]:checked ~ label::after{
 .sidebar:has(input[type="checkbox"]:checked) :is(.sidebar__item a, .profile-option){
     display: none;
 }
-
-
+.sidebar label:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 5px rgba(246, 98, 34, 0.15);
+}
+.sidebar:has(input[type="checkbox"]:checked) .sidebar__form label::before,
+.sidebar:has(input[type="checkbox"]:checked) .sidebar__form label::after {
+    display: none;
+}
