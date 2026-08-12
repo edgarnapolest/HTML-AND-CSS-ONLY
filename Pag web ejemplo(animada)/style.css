@@ -248,7 +248,7 @@ h1{
     min-height: 60vh;
 }    
 .portfolio__project{
-    background-image: linear-gradient(#0009, #0009), url(FotosensorArduino.png);
+    background-image: linear-gradient(#0009, #0009), url(/FotosensorArduino.png);
     background-position: center;
     background-size: cover;
     display: grid;
